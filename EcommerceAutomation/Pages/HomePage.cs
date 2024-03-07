@@ -1,13 +1,8 @@
-using EcommerceAutomation.Elements.Interfaces;
+using EcommerceAutomation.Pages.Forms;
 
 namespace EcommerceAutomation.Pages;
 
 public class HomePage : WebPage<HomePage>
 {
-    private ITextBox SearchInput => ElementFactory.GetTextBox(By.XPath("//input[@name='search']"));
-
-    public void SearchProduct(string searchText)
-    {
-        SearchInput.TypeText(searchText);
-    }
+    public SearchForm SearchForm => SearchForm.Instance;
 }
