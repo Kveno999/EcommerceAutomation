@@ -1,5 +1,3 @@
-using Newtonsoft.Json;
-
 namespace EcommerceAutomation.models;
 
 public class Config

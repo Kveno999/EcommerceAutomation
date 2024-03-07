@@ -1,3 +1,5 @@
+using EcommerceAutomation.Pages;
+
 namespace EcommerceAutomation.tests;
 
 public class ProductSearchTests : BaseTest
@@ -5,6 +7,6 @@ public class ProductSearchTests : BaseTest
     [Test]
     public void Test1()
     {
-        Assert.Pass();
+        HomePage.Instance.SearchProduct("Pad");
     }
 }

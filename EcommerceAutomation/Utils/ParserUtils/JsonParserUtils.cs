@@ -1,10 +1,10 @@
 using System.Text.Json;
 
-namespace EcommerceAutomation.utils.parserutils;
+namespace EcommerceAutomation.utils.ParserUtils;
 
 public static class JsonParserUtils
 {
-    public static async Task<T?> Deserialize<T>(string path)
+    public static async Task<T?> DeserializeAsync<T>(string path)
     {
         var currentDirectory =
             Directory.GetParent(@"../../../")?.FullName + Path.DirectorySeparatorChar + path;
